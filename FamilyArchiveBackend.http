@@ -1,0 +1,6 @@
+@FamilyArchiveBackend_HostAddress = http://localhost:5186
+
+GET {{FamilyArchiveBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
