@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyArchiveBackend", "FamilyArchiveBackend.csproj", "{16832C4A-A56C-4901-B560-9680D274BFB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16832C4A-A56C-4901-B560-9680D274BFB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16832C4A-A56C-4901-B560-9680D274BFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16832C4A-A56C-4901-B560-9680D274BFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16832C4A-A56C-4901-B560-9680D274BFB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFA6451C-6E14-4C11-BF22-4F57782B99CD}
+	EndGlobalSection
+EndGlobal
