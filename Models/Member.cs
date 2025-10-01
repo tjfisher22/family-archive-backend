@@ -21,5 +21,8 @@
         public ICollection<MemberSpouse> Spouses1 { get; set; } = new List<MemberSpouse>();
         public ICollection<MemberSpouse> Spouses2 { get; set; } = new List<MemberSpouse>();
 
+        //Used to query all spouses of a member
+        public IEnumerable<Member> Spouses =>
+            Spouses1.Select(s => s.Spouse2).Concat(Spouses2.Select(s => s.Spouse1));
     }
 }
