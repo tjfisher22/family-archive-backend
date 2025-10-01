@@ -1,0 +1,24 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/.idea.FamilyArchiveBackend.iml
+/modules.xml
+/projectSettingsUpdater.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+secrets.json
+appsettings.*.local.json
+#jetbrains
+.idea/
