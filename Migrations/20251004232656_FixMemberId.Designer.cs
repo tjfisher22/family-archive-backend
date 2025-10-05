@@ -3,6 +3,7 @@ using System;
 using FamilyArchiveBackend.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FamilyArchiveBackend.Migrations
 {
     [DbContext(typeof(FamilyArchiveContext))]
-    partial class FamilyArchiveContextModelSnapshot : ModelSnapshot
+    [Migration("20251004232656_FixMemberId")]
+    partial class FixMemberId
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
