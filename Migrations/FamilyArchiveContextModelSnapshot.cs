@@ -50,6 +50,9 @@ namespace FamilyArchiveBackend.Migrations
                     b.Property<string>("MaidenName")
                         .HasColumnType("text");
 
+                    b.Property<int?>("MemberId")
+                        .HasColumnType("integer");
+
                     b.Property<string>("MiddleName")
                         .HasColumnType("text");
 
@@ -57,6 +60,8 @@ namespace FamilyArchiveBackend.Migrations
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MemberId");
 
                     b.HasIndex("OwnerId");
 
@@ -124,6 +129,10 @@ namespace FamilyArchiveBackend.Migrations
 
             modelBuilder.Entity("FamilyArchiveBackend.Models.Member", b =>
                 {
+                    b.HasOne("FamilyArchiveBackend.Models.Member", null)
+                        .WithMany("Spouses")
+                        .HasForeignKey("MemberId");
+
                     b.HasOne("FamilyArchiveBackend.Models.User", "Owner")
                         .WithMany("Members")
                         .HasForeignKey("OwnerId");
@@ -174,6 +183,8 @@ namespace FamilyArchiveBackend.Migrations
                     b.Navigation("Children");
 
                     b.Navigation("Parents");
+
+                    b.Navigation("Spouses");
 
                     b.Navigation("Spouses1");
 
